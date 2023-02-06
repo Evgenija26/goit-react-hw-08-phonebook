@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { selectContacts } from 'redux/selectors';
+import { selectContacts } from 'redux/contacts/selectors';
 import { addContacts } from 'redux/contacts/operations';
 
 const nameInputId = nanoid();
@@ -34,7 +34,7 @@ export const ContactForm = () => {
   };
 
   const handleChange = e => {
-    const { name, value } = e.target;
+    const { name, value } = e.currentTarget;
     switch (name) {
       case 'name':
         setName(value);
