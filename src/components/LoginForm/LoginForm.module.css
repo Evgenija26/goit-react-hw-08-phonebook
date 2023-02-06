@@ -7,3 +7,21 @@
   flex-direction: column;
   margin-bottom: 16px;
 }
+
+.loginBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #777879;
+  border: 0;
+  padding: 8px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.loginBtn:hover {
+  box-shadow: 0px 2px 1px 1px rgba(48, 17, 99, 0.15);
+  background-color: #b9bcd3;
+}
